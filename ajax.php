@@ -1,6 +1,6 @@
 <?php
 $error = FALSE;
-if(file_exists(__DIR__.'/config.php')){
+if(file_exists('config.php')){
     require_once('lib/yelp.php'); 
     $message = '';
     if(!isset($CONSUMER_KEY) || empty($CONSUMER_KEY)){

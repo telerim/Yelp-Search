@@ -5,7 +5,7 @@ if(!file_exists('config.php')){
     $message = 'It seems like <strong>config.php</strong> does not exist. Please copy and rename the file <strong>config.php.sample</strong> to <strong>config.php</strong> and provide valid API Keys. API keys can be obtained from'.
             ' <a href="http://www.yelp.com/developers">http://www.yelp.com/developers</a>';
 } else {
-    require_once(__DIR__.'/config.php');
+    require_once('config.php');
     $message = '';
     if(!isset($CONSUMER_KEY) || empty($CONSUMER_KEY)){
         $message .= ' $CONSUMER_KEY is empty.';
